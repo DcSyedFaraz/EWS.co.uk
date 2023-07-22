@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+   .form-select{
+       @apply w-full text-black border border-primary-two rounded-full text-base outline-none py-2 px-3 leading-8;
+   }
+   
+    .form-input{
+        @apply w-full text-black rounded-lg border-2 border-primary-two text-base outline-none py-1 px-3 leading-8;
+    }
+
+   .btn-pri{
+       @apply bg-white text-primary-one border-2 border-primary-two px-6 py-2 text-lg rounded-tl-xl rounded-br-xl uppercase hover:rounded-none;
+   }
+
+   .btn-sec{
+       @apply bg-transparent text-white border-2 border-white px-6 py-2 text-lg rounded-tl-xl rounded-br-xl uppercase hover:rounded-none;
+   }
+   
+   .btn-sec-2{
+       @apply uppercase bg-gradient-to-r from-primary-one to-primary-two text-white border-2 border-primary-two px-6 py-2 text-lg rounded-tl-xl rounded-br-xl hover:rounded-none;
+   }
+    .btn{
+    @apply bg-primary-two text-white font-medium border-2 border-primary-one px-6 py-2 md:text-lg rounded-tl-xl rounded-br-xl hover:shadow-lg uppercase;
+}
+
+}
