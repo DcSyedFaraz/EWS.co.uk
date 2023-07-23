@@ -6,7 +6,8 @@
 
 
 @section('content')
-<div class="bg-primary-one">
+<link rel="stylesheet" href="{{ asset('dist/css/app.css') }}">
+<div class="bg-primary">
 
     <div class="container mx-auto lg:px-4 py-20 h-[32rem]">
         <div class="flex flex-col space-y-4 my-2 md:my-0 lg:flex-row lg:mx-4">
@@ -15,7 +16,7 @@
                 <form id="registration-form" action="{{ route('register') }}" method="POST"
                     class="border-4  bg-white border-[#6ec1e4] shadow-md rounded-lg px-4 pt-2 pb-6 flex flex-col md:ml-auto w-full space-y-2  ">
 
-                    <div class="bg-primary-one py-2 px-5 rounded-t-lg text-white">
+                    <div class="bg-primary py-2 px-5 rounded-t-lg text-white">
                         <p class="text-3xl text-center  font-semibold">
                             {{ trans('global.register') }}
                         </p>
@@ -61,8 +62,8 @@
 
                     <div class="mb-2">
                         <input type="text" id="phone" class="form-input @error('phone') error-field @enderror" placeholder="" value="{{ old('phone','') }}"/>
-                        <p id="valid-msg" class="hidden font-bold text-primary-one">
-                            <i class="fa fa-check-circle text-primary-one text-xl pt-2" aria-hidden="true"></i> Valid Number
+                        <p id="valid-msg" class="hidden font-bold text-primary">
+                            <i class="fa fa-check-circle text-primary text-xl pt-2" aria-hidden="true"></i> Valid Number
                         </p>
                         <p id="error-msg" class="hidden text-red-500 font-bold"></p>
                         @error('phone')

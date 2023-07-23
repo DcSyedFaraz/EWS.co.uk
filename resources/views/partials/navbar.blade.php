@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-custom">
+ <nav class="navbar navbar-expand-md navbar-custom">
     <div class="container">
         <!-- <a class="navbar-brand" href="#">Essay Writing Services</a> -->
         <span class="navbar-brand"></span>
@@ -26,9 +26,9 @@
                         <a class="dropdown-item" href="#">Service 3</a>
                     </div>
                 </li> --}}
-                
-                
-                
+
+
+
                 <li class="nav-item {{request()->routeIs('samples')  ? "active" : "" }}">
                     <a class="nav-link" href="{{route('samples')}}">Samples</a>
                 </li>
@@ -46,6 +46,14 @@
                 </li>
                 <li class="nav-item {{request()->routeIs('contact')  ? "active" : "" }}">
                     <a class="nav-link" href="{{route('contact')}}">Contact</a>
+                </li>
+                <li class="nav-item {{request()->routeIs('login')  ? "active" : "" }}">
+                    <a class="nav-link" href="{{route('login')}}">
+                        @if (Auth::user())
+                        {{ Auth::user()->name }}
+                        @else
+                        Log in
+                        @endif</a>
                 </li>
             </ul>
         </div>

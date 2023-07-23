@@ -15,7 +15,8 @@
         }
     ],
     "require": {
-        "php": "^7.2.5|^8.1",
+        "illuminate/foundation": "^8.75",
+        "php": "^7.2.5|^8.0",
         "ext-json": "*",
         "ext-mbstring": "*",
         "ext-openssl": "*",

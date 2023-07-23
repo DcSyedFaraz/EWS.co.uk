@@ -17,7 +17,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="manifest" href="./site.webmanifest">
-    
+
     <meta name='robots' content='index, follow' />
 
     <meta name="msapplication-config" content="./browserconfig.xml">
@@ -63,8 +63,8 @@
 
     @include('partials.footer')
 
-    {{ TawkTo::widgetCode("https://tawk.to/chat/61fa9916b9e4e21181bd1fda/1fqtec1ci") }} 
-    
+    {{ TawkTo::widgetCode("https://tawk.to/chat/61fa9916b9e4e21181bd1fda/1fqtec1ci") }}
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
@@ -79,7 +79,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     {{-- testimonial owl slider --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
-    
+
     <script>
         $(document).ready(function() {
             $(".owl-carousel").owlCarousel({

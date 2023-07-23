@@ -6,7 +6,8 @@
 
 
 @section('content')
-<div class="bg-primary-one">
+<link rel="stylesheet" href="{{ asset('dist/css/app.css') }}">
+<div class="bg-primary">
 
     <div class="container mx-auto lg:px-4 py-6 h-[32rem]">
         <div class="flex flex-col space-y-4 my-2 md:my-0 lg:flex-row lg:mx-4">
